@@ -1,0 +1,19 @@
+body{
+  background:#F2EBE5;
+  color:#2B262D;
+  margin:0;padding:0;
+}
+.header,.subheader{
+  height:50vh;
+  width:100vw;
+  display:flex;font-size:4vh;
+  align-items:center;
+  justify-content:center;
+}
+.header{
+  background:#9F496E;
+  font-size:7vh;
+}
+.subheader{
+  color:#647295;
+}
