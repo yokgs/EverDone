@@ -13,4 +13,4 @@ finally{
   id=id||newId();
 }
 alert(id);
-Lockr.get('ed-id',id);
+Lockr.set('ed-id',id);
