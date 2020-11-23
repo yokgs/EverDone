@@ -12,5 +12,7 @@ var id=Lockr.get('ed-id');
 finally{
   id=id||newId();
 }
-alert(id);
+$(document).ready(()=>{
+  $('.subheader').html('#'+id);
+});
 Lockr.set('ed-id',id);
