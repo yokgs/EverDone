@@ -9,6 +9,7 @@ body{
   display:flex;font-size:4vh;
   align-items:center;
   justify-content:center;
+  text-align:center;
 }
 .header{
   background:#9F496E;
