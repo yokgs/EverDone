@@ -1,4 +1,5 @@
 var id,
+registered=false,
 newId=function(){
   var id='';
   for(let i=0;i<8;i++){
@@ -8,11 +9,12 @@ newId=function(){
 };
 try{
 var id=Lockr.get('ed-id');
+registered=true;
 }catch(a){ }
 finally{
   id=id||newId();
 }
 $(document).ready(()=>{
-  $('.subheader').html('#'+id);
+  $('.subheader').html(registered?'tester id : #'+id:'alpha version is not available');
 });
-Lockr.set('ed-id',id);
+//Lockr.set('ed-id',id);
