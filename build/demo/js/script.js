@@ -9,7 +9,7 @@ newId=function(){
 };
 try{
 var id=Lockr.get('ed-id');
-registered=true;
+registered=!!id;
 }catch(a){ }
 finally{
   id=id||newId();
